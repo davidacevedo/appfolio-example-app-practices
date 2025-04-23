@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "jsx": "react",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@stores/*": ["stores/*"],
+      "@api/*": ["api/*"]
+    }
+  },
+  "include": ["src/**/*", "tests"],
+  "exclude": ["node_modules", "dist"]
+}
