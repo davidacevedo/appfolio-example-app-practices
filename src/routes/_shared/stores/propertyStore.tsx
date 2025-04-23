@@ -1,5 +1,9 @@
 import { observable, action, runInAction } from "mobx";
-import { fetchProperties, createProperty, Property } from "../api/propertyApi";
+import {
+  fetchProperties,
+  createProperty,
+  Property,
+} from "../api/propertyApi";
 
 class PropertyStore {
   @observable properties: Property[] = [];
@@ -38,5 +42,7 @@ class PropertyStore {
     }
   }
 }
+
+export const propertyStore = new PropertyStore();
 
 export default PropertyStore;

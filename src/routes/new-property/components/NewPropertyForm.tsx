@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { propertyStore } from "../stores";
+import { propertyStore } from "../../_shared/stores";
 import { useNavigate } from "react-router-dom";
 
 const NewPropertyForm = () => {

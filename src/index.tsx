@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { RouterProvider } from "react-router-dom";
 import { Provider } from "mobx-react";
-import { store } from "./stores";
+import { propertyStore } from "./routes/_shared/stores";
 import router from "./router";
 
 const App: React.FC = () => (
-  <Provider store={store}>
+  <Provider store={{ propertyStore }}>
     <RouterProvider router={router} />
   </Provider>
 );

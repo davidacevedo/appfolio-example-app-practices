@@ -1,31 +1,31 @@
 import React from "react";
-import { createBrowserRouter, Outlet } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import NewPropertyForm from "./components/NewPropertyForm";
-import Layout from "./routes/_shared/Layout";
+import { createBrowserRouter } from "react-router-dom";
+import ApmLayout from "./routes/_apm/route";
+import HomeRoute from "./routes/home/route";
+import AboutRoute from "./routes/about/route";
+import ContactRoute from "./routes/contact/route";
+import NewPropertyRoute from "./routes/new-property/route";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />, // Define the layout as a parent route
+    element: <ApmLayout />, // Use the ApmLayout as the parent route
     children: [
       {
         index: true,
-        element: <Home />, // Default child route
+        element: <HomeRoute />, // Default child route
       },
       {
         path: "about",
-        element: <About />,
+        element: <AboutRoute />,
       },
       {
         path: "contact",
-        element: <Contact />,
+        element: <ContactRoute />,
       },
       {
         path: "new-property",
-        element: <NewPropertyForm />,
+        element: <NewPropertyRoute />,
       },
     ],
   },

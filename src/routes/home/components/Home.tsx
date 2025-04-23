@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { propertyStore } from "../stores";
+import { propertyStore } from "../../_shared/stores";
 import PropertiesList from "./PropertiesList";
 import { Link } from "react-router-dom";
 
