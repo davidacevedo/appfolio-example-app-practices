@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { propertyStore } from "../stores";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const NewPropertyForm = () => {
   const [address, setAddress] = useState("");
   const [image, setImage] = useState(propertyStore.properties[0]?.image || "");
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     await propertyStore.createProperty({ address, image });
-    history.push("/");
+    navigate("/");
   };
 
   return (
