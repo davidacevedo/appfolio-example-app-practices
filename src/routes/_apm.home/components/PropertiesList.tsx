@@ -1,7 +1,7 @@
 import React from "react";
 import { observer } from "mobx-react";
 import Property from "./Property";
-import { Property as PropertyType } from "../../_shared/api/propertyApi";
+import { Property as PropertyType } from "../../../_apm.shared/api/propertyApi";
 
 interface PropertiesListProps {
   store: {

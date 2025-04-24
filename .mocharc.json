@@ -1,5 +1,5 @@
 {
   "extension": ["js", "jsx", "ts", "tsx"],
-  "require": ["./babel-register.js", "./src/setupTests.ts"],
+  "require": ["./babel-register.js", "./tests/setupTests.ts"],
   "spec": "tests/**/*.test.tsx"
 }

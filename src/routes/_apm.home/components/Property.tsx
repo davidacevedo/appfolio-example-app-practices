@@ -1,5 +1,5 @@
 import React from "react";
-import { Property as PropertyType } from "../../_shared/api/propertyApi";
+import { Property as PropertyType } from "../../../_apm.shared/api/propertyApi";
 
 interface PropertyProps {
   property: PropertyType;

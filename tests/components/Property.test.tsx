@@ -1,8 +1,8 @@
 import React from "react";
 import { shallow } from "enzyme";
 import { expect } from "chai";
-import Property from "../../src/routes/home/components/Property";
-import { Property as PropertyType } from "../../src/routes/_shared/api/propertyApi";
+import Property from "../../src/routes/_apm.home/components/Property";
+import { Property as PropertyType } from "../../src/routes/_apm.shared/api/propertyApi";
 
 describe("Property Component", () => {
   const mockProperty: PropertyType = {
